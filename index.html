@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html onselectstart="return false">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #box{
+            overflow: hidden;
+            position: relative;
+            width: 700px;
+            height: 540px;
+            background: antiquewhite;
+            border:1px solid deeppink;
+            margin: 50px auto;
+            padding: 0 20px;
+            user-select: none;
+            -ms-user-select: none;
+            -moz-user-select: -moz-none;
+        }
+        #content{
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 700px;
+            padding:0 20px;
+        }
+        #box p{
+            line-height: 40px;
+        }
+        #box p.pbold{
+            font-weight: bold;
+        }
+        #box:hover #scroll{
+            opacity: 1;
+        }
+        #scroll{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background: #bbb;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        #scroll .bar{
+            position: absolute;
+            top:0;
+            left: 2px;
+            width: 13px;
+            height: 50px;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <!-- 内容区 -->
+    <div id="content">
+        <h2>阿甘正传</h2><br>
+        <p class="pbold">1、Life was like a box of chocolates, you never know what you're going to get.</p>
+        <p>生命就像一盒巧克力，结果往往出人意料。</p>
+        <p class="pbold">2、Stupid is as stupid does.</p>
+        <p>蠢人做蠢事，也可理解为傻人有傻福。</p>
+        <p class="pbold">3、Miracles happen every day.</p>
+        <p>奇迹每天都在发生。</p>
+        <p class="pbold">4、it made me look like a duck in water.</p>
+        <p>它让我如鱼得水。</p>
+        <p class="pbold">5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+        <p>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</p>
+        <p class="pbold">6、Death is just a part of life, something we're all destined to do.</p>
+        <p>死亡是生命的一部分，是我们注定要做的一件事。</p>
+        <p class="pbold">7、You have got to put the past behind you before you can move on.</p>
+        <p>放下包袱，继续前进。</p>
+        <p class="pbold">8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+        <p>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</p>
+        <p class="pbold">9、If there is anything you need, I will not be far away.</p>
+        <p>只要你需要，我就在这里。</p>
+        <p class="pbold">10、I am a man of my word.</p>
+        <p>我是信守承诺的人。</p>
+        <p class="pbold">11、There is one small step for a man,a giant leap for mankind.</p>
+        <p>某人的一小步就是人类的一大步。</p>
+        <p class="pbold">1、Life was like a box of chocolates, you never know what you're going to get.</p>
+        <p>生命就像一盒巧克力，结果往往出人意料。</p>
+        <p class="pbold">2、Stupid is as stupid does.</p>
+        <p>蠢人做蠢事，也可理解为傻人有傻福。</p>
+        <p class="pbold">3、Miracles happen every day.</p>
+        <p>奇迹每天都在发生。</p>
+        <p class="pbold">4、it made me look like a duck in water.</p>
+        <p>它让我如鱼得水。</p>
+        <p class="pbold">5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+        <p>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</p>
+        <p class="pbold">6、Death is just a part of life, something we're all destined to do.</p>
+        <p>死亡是生命的一部分，是我们注定要做的一件事。</p>
+        <p class="pbold">7、You have got to put the past behind you before you can move on.</p>
+        <p>放下包袱，继续前进。</p>
+        <p class="pbold">8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+        <p>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</p>
+        <p class="pbold">9、If there is anything you need, I will not be far away.</p>
+        <p>只要你需要，我就在这里。</p>
+        <p class="pbold">10、I am a man of my word.</p>
+        <p>我是信守承诺的人。</p>
+        <p class="pbold">11、There is one small step for a man,a giant leap for mankind.</p>
+        <p>某人的一小步就是人类的一大步。</p>
+        <p class="pbold">1、Life was like a box of chocolates, you never know what you're going to get.</p>
+        <p>生命就像一盒巧克力，结果往往出人意料。</p>
+        <p class="pbold">2、Stupid is as stupid does.</p>
+        <p>蠢人做蠢事，也可理解为傻人有傻福。</p>
+        <p class="pbold">3、Miracles happen every day.</p>
+        <p>奇迹每天都在发生。</p>
+        <p class="pbold">4、it made me look like a duck in water.</p>
+        <p>它让我如鱼得水。</p>
+        <p class="pbold">5、I don't know if we each have a destiny, or if we're all just floating around accidental—like on a breeze.</p>
+        <p>我不懂我们是否有着各自的命运，还是只是到处随风飘荡。</p>
+        <p class="pbold">6、Death is just a part of life, something we're all destined to do.</p>
+        <p>死亡是生命的一部分，是我们注定要做的一件事。</p>
+        <p class="pbold">7、You have got to put the past behind you before you can move on.</p>
+        <p>放下包袱，继续前进。</p>
+        <p class="pbold">8、It was like just before the sun goes to bed down on the bayou. There was a million sparkles on the river.</p>
+        <p>就像太阳在落山前映射在河口上，有无数的亮点在闪闪发光。</p>
+        <p class="pbold">9、If there is anything you need, I will not be far away.</p>
+        <p>只要你需要，我就在这里。</p>
+        <p class="pbold">10、I am a man of my word.</p>
+        <p>我是信守承诺的人。</p>
+        <p class="pbold">11、There is one small step for a man,a giant leap for mankind.</p>
+        <p>某人的一小步就是人类的一大步。</p>
+    </div>
+
+    <!-- 滚动条 -->
+    <div id="scroll">
+        <div class="bar"></div>
+    </div>
+</div>
+<script>
+
+    var oBox = document.getElementById("box");
+    var oScroll = document.getElementById("scroll");
+    var oBar = oScroll.children[0];
+    var oContent = document.getElementById("content");
+
+    if(oContent.clientHeight>oBox.clientHeight){
+//设置滚动条的高度
+        // bar/scroll = box/content
+        oBar.style.height = Math.pow(oBox.clientHeight,2)/oContent.clientHeight + "px";
+
+        //滑块的最大最小值
+        var barTopMax = oScroll.clientHeight - oBar.clientHeight;
+        var barTopMin = 0;
+
+        var conTopMax = oContent.clientHeight - oBox.clientHeight;
+        var conTopMin = 0;
+
+        //滑块与内容的比例关系
+        var prop = barTopMax/conTopMax;
+
+        //添加滚轮事件
+        addWheelEvent(oBox,function(e,d){
+            d *= 15;
+            changeTop(-d*prop);
+            return false;
+        });
+
+        //添加拖拽事件
+        oBar.onmousedown = function(ev){
+            ev = ev || window.event;
+            var sY = ev.clientY;
+            document.onmousemove = function(ev){
+                var nY = ev.clientY;
+                changeTop(nY - sY);
+                sY = ev.clientY;
+            };
+            document.onmouseup = function(){
+                this.onmousemove = null;
+            }
+        };
+
+        //添加鼠标点击滚动条事件
+        oScroll.onclick = function(e){
+            e=e||window.event;
+            var sY = e.clientY;
+            var barT = getOffsetTop(oBar) - document.documentElement.scrollTop || document.body.scrollTop;
+            console.log(getOffsetTop(oBar));
+            var y_ = sY - (barT+oBar.clientHeight/2);
+            changeTop(y_);
+        };
+        oBar.onclick = function (e) {
+            e.stopPropagation();
+        }
+    }else{
+        oBox.removeChild(oScroll);
+    }
+
+    //获取元素到页面顶部的距离
+    function getOffsetTop(obj){
+        var t = 0;
+        while(obj !== document.body){
+            t += obj.offsetTop;
+            obj = obj.parentNode;
+        }
+        return t;
+    }
+
+    //滚轮top变化 以及 内容top变化
+    function changeTop(x){
+        //滑块相关
+        var sT = oBar.offsetTop + x;
+        sT = Math.min(barTopMax,sT);
+        sT = Math.max(0,sT);
+        oBar.style.top = sT + "px";
+        //内容相关
+        var cT = oContent.offsetTop - x/prop;
+        cT = Math.max(-conTopMax,cT);
+        cT = Math.min(0,cT);
+        oContent.style.top = cT + "px";
+    }
+
+    //添加滚轮事件
+    function addWheelEvent(obj,eFn){
+        //判断是否ie浏览器
+        if(document.addEventListener){
+            //判断是否火狐
+            var oDiv = document.createElement("div");
+            if(oDiv.onmousewheel === null){
+                //非火狐
+                obj.addEventListener("mousewheel",fn,false);
+            }else{
+                //火狐
+                obj.addEventListener("DOMMouseScroll",fn,false);
+            }
+        }else{
+            obj.attachEvent("onmousewheel",fn);
+        }
+        function fn(e){
+            e = e||window.event;
+            var d = e.wheelDelta/150 || -e.detail/3;
+            eFn.call(obj,e,d);
+            e.preventDefault && e.preventDefault();
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
